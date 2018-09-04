@@ -1,0 +1,52 @@
+html{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+#title h1{
+    margin: 0;
+}
+#title h2{
+    margin: 0;
+    font-family: 'Permanent Marker', cursive;
+}
+#title{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: gray;
+    grid-area: header;
+}
+#img-div{
+    padding-top: 100px;
+    width: 100%;
+    grid-area: content;
+}
+#img-caption{
+    color: gray;
+}
+#tribute-info{
+    grid-area: altcontent;
+}
+#learn-more{
+    grid-area: footer;
+}
+#main{
+    background-color: lightgray;
+    display: grid;
+    text-align: center;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+            "header header header"
+            "content content content"
+            "altcontent altcontent altcontent"
+            "footer footer footer";
+}
+#image{
+    max-width: 100%;
+    margin: 0 auto;
+    border: 30px solid #dee6f2;
+    box-shadow: 5px 5px gray;
+    display: block;
+    grid-area: content;
+}
